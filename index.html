@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Tic Tac Toe</h1>
+    <div id="theme-toggle">
+      <input type="checkbox" id="theme-switch">
+      <label for="theme-switch">Dark Mode</label>
+    </div>
+    <div id="game-mode">
+      <button id="vs-computer">Play vs Computer</button>
+      <button id="vs-player">Play vs Player</button>
+    </div>
+    <div id="game-status"></div>
+    <div id="board" class="board"></div>
+    <div id="score-container">
+      <div id="player-score" class="score-box">
+        <span class="score-label">Player</span>
+        <span id="player-score-value">0</span>
+      </div>
+      <div id="computer-score" class="score-box">
+        <span class="score-label">Computer</span>
+        <span id="computer-score-value">0</span>
+      </div>
+    </div>
+    <div id="high-score"></div>
+    <button id="reset">Reset Game</button>
+  </div>
+  <audio id="moveSound" src="https://assets.mixkit.co/sfx/preview/mixkit-click-error-1110.mp3"></audio>
+  <audio id="winSound" src="https://assets.mixkit.co/sfx/preview/mixkit-achievement-bell-600.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
